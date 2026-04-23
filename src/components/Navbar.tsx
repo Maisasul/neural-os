@@ -15,7 +15,7 @@ const navLinks: NavLink[] =[
 ]
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-surface/60 backdrop-blur-xl border-b border-primary/20">
+    <nav className="fixed top-0 left-0 w-full z-[60] flex justify-between items-center px-8 h-20 bg-surface/60 backdrop-blur-xl border-b border-primary/20 pointer-events-autoixed top-0 left-0 w-full z-50 flex justify-between items-center px-8 h-20 bg-surface/60 backdrop-blur-xl border-b border-primary/20">
       {/* logo section */}
       <div className="text-3xl font-bold tracking-tighter text-primary drop-shadow-[0_0_10px_rgba(0,212,255,0.5)] font-consciousness">
         NEURAL

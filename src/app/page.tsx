@@ -1,3 +1,4 @@
+import Hero from '@/components/Hero'
 import Navbar from '@/components/Navbar'
 import Sidebar from '@/components/Sidebar'
 import React from 'react'
@@ -8,8 +9,8 @@ const page = () => {
       <Navbar />
       <Sidebar />
       {/* Main content area */}
-      <div className="pt-20 pl-20">
-        {/* main content goes here */}
+      <div className="md:pl-20 pt-20">
+        <Hero />
       </div>
     </main>
   )
