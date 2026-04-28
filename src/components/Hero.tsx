@@ -143,7 +143,7 @@ const Hero = () => {
 
 
   return (
-    <div className="fixed inset-0 w-full h-full flex items-center justify-center overflow-hidden bg-[#050505] p-4 md:p-0 ">
+    <div className="relative w-full min-h-[calc(100vh-80px)] flex items-center justify-center overflow-hidden bg-[#050505] p-4 md:p-0">
 
       <AnimatePresence mode="wait">
         {stage !== "chat" ? (
@@ -213,8 +213,8 @@ const Hero = () => {
                 <motion.div
                   animate={
                     stage === "awake-eye" || stage === "online"
-                      ? { y: -100 }
-                      : { y: 0 }
+                      ? { y: -60, opacity: 0.5 }
+                      : { y: 0, opacity: 1 }
                   }
                   transition={{ duration: 1.5 }}
                   className="absolute inset-0 overflow-hidden"
@@ -230,8 +230,8 @@ const Hero = () => {
                 <motion.div
                   animate={
                     stage === "awake-eye" || stage === "online"
-                      ? { y: 80 }
-                      : { y: 0 }
+                      ? { y: 60, opacity: 0.5 }
+                      : { y: 0, opacity: 1 }
                   }
                   transition={{ duration: 1.2 }}
                   className="absolute inset-0 overflow-hidden flex items-end justify-center"
