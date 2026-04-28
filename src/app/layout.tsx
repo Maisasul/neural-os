@@ -1,5 +1,6 @@
 import { Epilogue, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import { Viewport } from "next";
 
 export const viewport: Viewport = {
   width: 'device-width',
