@@ -1,6 +1,13 @@
 import { Epilogue, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
 const epilogue = Epilogue({ 
   subsets: ["latin"],
   variable: "--font-epilogue",
@@ -27,3 +34,5 @@ export default function RootLayout({
     </html>
   );
 }
+
+
